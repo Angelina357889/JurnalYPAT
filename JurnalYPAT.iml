@@ -7,5 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="JurnalYPAT" level="project" />
+    <orderEntry type="library" name="java" level="project" />
+    <orderEntry type="library" name="BOT" level="project" />
+    <orderEntry type="library" name="mysql-connector-j-8.0.33" level="project" />
   </component>
 </module>
