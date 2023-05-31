@@ -13,7 +13,8 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="8cb4d393-8bef-4a6e-ad0f-82c35ac2e99a">
-      <console name="Connection-YPAT" type="STANDARD" schema="rybin1_jurYPAT" session="Main" />
+      <console name="Connection-YPAT" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[insert into `Roles` (name) values ('manager');
+select  * from `Roles`;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -21,6 +22,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -508,5 +512,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>

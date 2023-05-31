@@ -16,7 +16,7 @@ public class DateBaseConnection extends Connect {
         Class.forName("com.mysql.cj.jdbc.Driver");
         //Само подключение через метод
         dbConnect = DriverManager.getConnection(connectorString, userNameDB, passwordDB);
-        System.out.println("Успешное подключение к Базе данных");
+        //System.out.println("Успешное подключение к Базе данных");
         return dbConnect;
     }
 
