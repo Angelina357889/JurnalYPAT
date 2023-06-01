@@ -27,7 +27,7 @@ public class Main {
         //getAllUsers();
         //вывод всех ролей
         getAllUsers();
-        updateRoleIdUser();
+
         getAllUsers();
 
 

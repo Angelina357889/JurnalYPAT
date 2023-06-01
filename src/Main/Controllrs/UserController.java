@@ -49,7 +49,7 @@ public class UserController extends User{
 
         user.updateUserName(newNameUser, id);
     }
-    public static void updateRoleIdUser() {
+    public static void updateRoleIdUser() throws SQLException, ClassNotFoundException {
         User user = new User();
         Scanner input = new Scanner(System.in);
         System.out.println("Введите новую роль id пользователя");
@@ -57,27 +57,12 @@ public class UserController extends User{
         System.out.println("Выберите № ID имени");
         Integer id = input.nextInt();
 
-        user.updateRoleId(newRoleIdUser,id);
-    }
-    public static void updateLoginUser() throws SQLException, ClassNotFoundException {
-        User user = new User();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Введите новую роль id пользователя");
-        String newNameUser = input.nextLine();
-        System.out.println("Выберите № ID имени");
-        Integer id = input.nextInt();
-
-        user.updateUserName(newNameUser, id);
+        user.updateRoleId(newRoleIdUser, id);
     }
 
-    public static void updatePasswordUser() throws SQLException, ClassNotFoundException {
+    public static void deleteUser(Integer userId) throws SQLException, ClassNotFoundException {
         User user = new User();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Введите новое название имени пользователя");
-        String newNameUser = input.nextLine();
-        System.out.println("Выберите № ID имени");
-        Integer id = input.nextInt();
-
-        user.updateUserName(newNameUser, id);
+        user.delete(userId);
+        System.out.println("");
     }
 }

@@ -90,7 +90,7 @@ public class User {
     }
 
     public void updateRoleId(Integer sword, Integer id) throws SQLException, ClassNotFoundException {
-        String query = "UPDATE " + TABLE_USERS + " SET " + TABLE_USERS_ROLE_ID + " = '" + sword + "' WHERE " + ROLE_TABLE_ID + " = " + id + "";
+        String query = "UPDATE " + TABLE_USERS + " SET " +  ROLE_TABLE_ID  + " = " + sword + " WHERE " + TABLE_USERS_ROLE_ID + " = " + id + "";
         Statement statement = getDbConnect().createStatement();
         System.out.println(query);
         statement.executeUpdate(query);
@@ -111,7 +111,12 @@ public class User {
     }
 
     //Методы удаления одной записей
-
+public void delete(Integer userId) throws SQLException, ClassNotFoundException {
+        String query = "DELETE FROM " + TABLE_USERS + "WHERE " + TABLE_USERS_ID + "=" + userId;
+    Statement statement = getDbConnect().createStatement();
+    System.out.println(query);
+    statement.executeUpdate(query);
+}
 
     //Геттеры
 
