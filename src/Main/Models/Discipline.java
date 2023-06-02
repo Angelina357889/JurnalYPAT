@@ -1,6 +1,12 @@
 package Main.Models;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+
+import static Main.ConfigDataBase.ConstDB.TABLE_DIST;
+import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
 
 public class Discipline {
     // поля данных
@@ -37,6 +43,21 @@ public class Discipline {
         return disciplines;
     }
 
+    public ArrayList<Discipline> getAll() throws SQLException, ClassNotFoundException {
+        ArrayList<Discipline> disciplines = new ArrayList<>();
+
+        String query = "SELECT * FROM " + TABLE_DIST;
+
+        Statement statement = getDbConnect().createStatement();
+
+        ResultSet result = statement.executeQuery(query);
+
+        while (result.next()){
+            disciplines.add(new Discipline(result.getInt("id"), result.getString(name)));
+
+        }
+        return disciplines;
+    }
     //геттеры
 
 

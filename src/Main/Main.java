@@ -10,6 +10,8 @@ import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
 import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
 import static Main.Controllrs.UserController.*;
 import static Main.Controllrs.UserController.updateRoleIdUser;
+import static Main.Controllrs.disceplineController.*;
+import static Main.Controllrs.disceplineController.getAllDisciplines;
 
 
 public class Main {
@@ -26,11 +28,13 @@ public class Main {
         //вывод пользователя
         //getAllUsers();
         //вывод всех ролей
-        getAllUsers();
-        updateRoleIdUser();
-        getAllUsers();
+        //getAllUsers();
+        //updateRoleIdUser();
+       // getAllUsers();
 
+        //getTest();
 
+        getAllDisciplines();
     }
 
 
