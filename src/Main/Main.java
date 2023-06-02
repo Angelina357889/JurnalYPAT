@@ -10,6 +10,7 @@ import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
 import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
 import static Main.Controllrs.UserController.*;
 import static Main.Controllrs.UserController.updateRoleIdUser;
+import static Main.Controllrs.disceplineController.getTest;
 
 
 public class Main {
@@ -17,7 +18,6 @@ public class Main {
         //вывод всех ролей
         // getAllRoles();
         //обновить роль updateRole();
-
         //deleteRole();
         //вывести одну запись
         //  Scanner input = new Scanner(System.in);
@@ -26,13 +26,12 @@ public class Main {
         //вывод пользователя
         //getAllUsers();
         //вывод всех ролей
-        getAllUsers();
-        updateRoleIdUser();
-        getAllUsers();
-
+        // getAllUsers();
+        // updateRoleIdUser();
+        //  getAllUsers();
+        getTest();
 
     }
-
 
 
 }
