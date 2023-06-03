@@ -34,7 +34,8 @@ public class Main {
 
         //getTest();
 
-        getAllDisciplines();
+        getOneDisciplines();
+
     }
 
 
