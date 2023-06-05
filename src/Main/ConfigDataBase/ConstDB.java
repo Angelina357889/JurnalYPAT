@@ -17,4 +17,14 @@ public class ConstDB {
     public static final String TABLE_DIST_ID = "id";
     public static final String TABLE_DIST_NAME = "name";
 
+
+    public static final String TABLE_MESSAGES = "messages";
+    public static final String TABLE_MESSAGES_ID = "id";
+    public static final String TABLE_MESSAGES_USER_ID = "user_id";
+    public static final String TABLE_MESSAGES_TITLE = "title";
+    public static final String TABLE_MESSAGES_PATH_FILE = "path_file";
+    public static final String TABLE_MESSAGES_DATE_OF_CREATION = "dateOfCreation";
+    public static final String TABLE_MESSAGES_TEXT = "text";
+    public static final String TABLE_MESSAGES_USER_RECIPIENT_ID = "userRecipientId";
+
 }

@@ -1,21 +1,17 @@
 package Main;
 
+
 import Main.Controllrs.UserController;
+import Main.Models.Messages;
 
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
-import java.util.Scanner;
 
-import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
-import static Main.ConfigDataBase.DateBaseConnection.getDbConnect;
-import static Main.Controllrs.UserController.*;
-import static Main.Controllrs.UserController.updateRoleIdUser;
-import static Main.Controllrs.disceplineController.*;
-import static Main.Controllrs.disceplineController.getAllDisciplines;
+import static Main.Controllrs.MessaggesController.*;
 
 
 public class Main {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, SQLException, InvocationTargetException {
+    public static void main(String[] args) throws  ClassNotFoundException, InvocationTargetException, SQLException {
         //вывод всех ролей
         // getAllRoles();
         //обновить роль updateRole();
@@ -30,13 +26,14 @@ public class Main {
         //вывод всех ролей
         //getAllUsers();
         //updateRoleIdUser();
-       // getAllUsers();
+        // getAllUsers();
 
         //getTest();
+    getAllMessanges();
 
-        getOneDisciplines();
 
     }
+
 
 
 

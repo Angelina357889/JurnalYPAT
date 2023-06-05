@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -15,6 +15,7 @@
     <connection id="8cb4d393-8bef-4a6e-ad0f-82c35ac2e99a">
       <console name="Connection-YPAT" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[insert into `Roles` (name) values ('manager');
 select  * from `Roles`;]]></console>
+      <console name="Messagers" type="STANDARD" schema="rybin1_jurYPAT" session="Main"><![CDATA[select * from `Messeges`]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -83,7 +84,7 @@ select  * from `Roles`;]]></console>
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+        <object-filters hide-empty-schemas="true" hide-pseudo-columns="false">
           <object-type-filter>
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />

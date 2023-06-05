@@ -1,6 +1,5 @@
 package Main.Models;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -24,9 +23,11 @@ public class User {
 
     public User(Integer idUser,
                 Integer roleId,
+                int user_id,
                 String nameUser,
                 String lofinUser,
-                String passwordUser) {
+                String passwordUser,
+                String title) {
         this.idUser = idUser;
         this.roleId = roleId;
         this.nameUser = nameUser;
@@ -56,10 +57,12 @@ public class User {
             users[i] = new User(
                     result.getInt("id"),
                     result.getInt("role_id"),
+                    result.getInt("user_id"),
                     result.getString("name"),
                     result.getString("login"),
-                    result.getString("password")
-            );
+                    result.getString("password"),
+                    result.getString("title"));
+
             i++;
         }
         return users;
